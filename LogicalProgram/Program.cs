@@ -7,9 +7,22 @@ namespace LogicalProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("logicalProgrammimg");
-            fibonnaci f1 = new fibonnaci();
-            f1.series();
+            while (true)
+            {
+                Console.WriteLine("select no\n1)fibonacci series\n2)perfect number\n");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        fibonnaci f1 = new fibonnaci();
+                        f1.series();
+                        break;
+                    case 2:
+                        perfectNo f2 = new perfectNo();
+                        f2.number();
+                        break;
+                }
+            }
             
         }
     }
