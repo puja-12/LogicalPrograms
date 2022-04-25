@@ -9,7 +9,7 @@ namespace LogicalProgram
         {
             while (true)
             {
-                Console.WriteLine("select no\n1)fibonacci series\n2)perfect number\n3)Prime number\n4)stopwatch\n");
+                Console.WriteLine("select no\n1)fibonacci series\n2)perfect number\n3)Prime number\n4)stopwatch\n5 reverse number");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -28,6 +28,10 @@ namespace LogicalProgram
                     case 4:
                         Demo_Stopwatchh W1 = new Demo_Stopwatchh();
                         W1.watch();
+                        break;
+                    case 5:
+                        ReverseExample R1 = new ReverseExample();
+                        R1.Reverse();
                         break;
                 }
             }
