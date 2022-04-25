@@ -10,28 +10,29 @@ namespace LogicalProgram
     {
         public void number()
         {
-            int  sum = 0, n;
-            Console.Write("enter the Number");
-            n = int.Parse(Console.ReadLine());
-           
-            for (int i = 1; i < n; i++)
+
+
+            int x, sum = 0;
+            Console.Write("enter the Number : ");
+            x = Convert.ToInt16(Console.ReadLine());
+
+            for (int i = 1; i < x; i++)
             {
-                if (n % i == 0)
+                if (x % i == 0)
                 {
                     sum = sum + i;
                 }
             }
-            if (sum == n)
+            if (sum == x)
             {
-                Console.WriteLine("\n Entered number is a perfect number");
-                Console.ReadLine();
+                Console.WriteLine("Entered number is a perfect number\n");
+
             }
             else
             {
-                Console.WriteLine("\n Entered number is not a perfect number");
-                Console.ReadLine();
-            }
+                Console.WriteLine("Entered number is not a perfect number\n");
 
+            }
         }
     }
 }

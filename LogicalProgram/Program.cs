@@ -9,7 +9,7 @@ namespace LogicalProgram
         {
             while (true)
             {
-                Console.WriteLine("select no\n1)fibonacci series\n2)perfect number\n");
+                Console.WriteLine("select no\n1)fibonacci series\n2)perfect number\n3)Prime number\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -20,6 +20,10 @@ namespace LogicalProgram
                     case 2:
                         perfectNo f2 = new perfectNo();
                         f2.number();
+                        break;
+                    case 3:
+                        primeNo prime = new primeNo();
+                        prime.primeNumber();
                         break;
                 }
             }
