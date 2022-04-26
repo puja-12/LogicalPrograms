@@ -9,7 +9,8 @@ namespace LogicalProgram
         {
             while (true)
             {
-                Console.WriteLine("select no\n1)fibonacci series\n2)perfect number\n3)Prime number\n4)stopwatch\n5 reverse number");
+                Console.WriteLine("select no\n1)fibonacci series\n2)perfect number\n3)Prime number\n4)stopwatch\n)5 reverse number\n)6 coupun number" +
+                    "");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -33,10 +34,18 @@ namespace LogicalProgram
                         ReverseExample R1 = new ReverseExample();
                         R1.Reverse();
                         break;
+                    case 6:
+                        Coupon numb = new Coupon();
+                        numb.CouponCode();
+                        break;
+
+
                 }
             }
-            
+
         }
     }
-
 }
+    
+
+
